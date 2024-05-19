@@ -16,7 +16,7 @@ header {
     width: 100%;
 }
 main {
-    padding: 1rem;
+    margin-left: 1rem; /* Adds space to the left side of the main content */
 }
 footer {
     background: #333;
