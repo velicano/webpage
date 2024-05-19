@@ -17,6 +17,7 @@ header {
 }
 main {
     margin-left: 10rem; /* Adds space to the left side of the main content */
+    margin-right: 10rem;
 }
 footer {
     background: #333;
