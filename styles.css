@@ -56,7 +56,7 @@ footer {
 }
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
     gap: 16px;
 }
 .image-grid img {
