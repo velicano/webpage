@@ -54,3 +54,13 @@ footer {
 .video-text {
     max-width: 1000px;
 }
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
