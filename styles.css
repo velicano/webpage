@@ -42,6 +42,7 @@ header.fixed-header nav a:visited {
 main {
     margin-left: 10rem;
     margin-right: 10rem;
+    scroll-margin-top: 5rem;
 }
 main a {
     color: #000000;
