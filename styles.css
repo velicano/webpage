@@ -31,7 +31,7 @@ header.fixed-header {
 header.fixed-header nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.4rem;
     background-color: #555; /* Button background color */
     border: none; /* Remove default border */
     border-radius: 4px; /* Rounded corners */
