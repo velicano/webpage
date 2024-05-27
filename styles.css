@@ -68,6 +68,7 @@ footer {
 }
 .section {
     margin-bottom: 1.5rem;
+    scroll-margin-top: 5rem; /* Offset to accommodate fixed header */
 }
 .section h2 {
     margin-bottom: 1rem;
@@ -95,4 +96,7 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+}
+.div {
+    scroll-margin-top: 5rem; /* Offset to accommodate fixed header */
 }
