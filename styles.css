@@ -67,7 +67,7 @@ footer {
 }
 .section {
     margin-bottom: 1.5rem;
-    scroll-margin-top: 7rem; /* Offset to accommodate fixed header */
+    scroll-margin-top: 8rem; /* Offset to accommodate fixed header */
 }
 .section h2 {
     margin-bottom: 1rem;
@@ -89,7 +89,6 @@ footer {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 500px));
     gap: 16px;
 }
 .image-grid img {
