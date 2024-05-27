@@ -42,7 +42,6 @@ header.fixed-header nav a:visited {
 main {
     margin-left: 10rem;
     margin-right: 10rem;
-    scroll-margin-top: 5rem;
 }
 main a {
     color: #000000;
@@ -68,7 +67,7 @@ footer {
 }
 .section {
     margin-bottom: 1.5rem;
-    scroll-margin-top: 5rem; /* Offset to accommodate fixed header */
+    scroll-margin-top: 7rem; /* Offset to accommodate fixed header */
 }
 .section h2 {
     margin-bottom: 1rem;
@@ -98,5 +97,5 @@ footer {
     display: block;
 }
 .div {
-    scroll-margin-top: 5rem; /* Offset to accommodate fixed header */
+    scroll-margin-top: 7rem; /* Offset to accommodate fixed header */
 }
