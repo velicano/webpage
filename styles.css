@@ -44,7 +44,7 @@ header.fixed-header nav a:visited {
     color: #fff; /* Ensure visited links remain white */
 }
 main a:visited {
-    color: #fff; /* Ensure visited links remain white */
+    color: #000000; /* Ensure visited links remain black */
 }
 main {
     margin-left: 10rem;
