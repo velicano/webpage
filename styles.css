@@ -92,3 +92,6 @@ header.fixed-header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+header.fixed-header nav ul li a:visited {
+    color: #fff; /* Ensure visited links remain white */
+}
