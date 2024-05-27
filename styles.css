@@ -24,7 +24,7 @@ header.fixed-header {
     width: 100%;
     background: #333;
     color: #fff;
-    padding: 0;
+    padding: 1;
     text-align: center;
     z-index: 1000; /* Ensure it stays above other elements */
 }
