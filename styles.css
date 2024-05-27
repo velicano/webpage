@@ -79,7 +79,16 @@ header.fixed-header {
 header.fixed-header nav a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #555; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
 }
+header.fixed-header nav a:hover {
+    background-color: #777; /* Hover state background color */
+}
+
 header.fixed-header nav a:visited {
     color: #fff; /* Ensure visited links remain white */
 }
