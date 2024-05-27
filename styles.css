@@ -43,6 +43,9 @@ header.fixed-header nav a:hover {
 header.fixed-header nav a:visited {
     color: #fff; /* Ensure visited links remain white */
 }
+main a:visited {
+    color: #fff; /* Ensure visited links remain white */
+}
 main {
     margin-left: 10rem;
     margin-right: 10rem;
