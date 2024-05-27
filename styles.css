@@ -16,7 +16,7 @@ header {
     width: 100%;
 }
 header h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: fantasy;
 }
 header.fixed-header {
     position: sticky;
