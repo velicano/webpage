@@ -12,6 +12,7 @@ header {
     background: rgb(51, 51, 51);
     color: #fff;
     padding: 0.03%;
+    margin: 0;
     text-align: center;
     width: 100%;
 }
