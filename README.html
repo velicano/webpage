@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>MoboRobot</h1>
+        <nav>
+            <a href="#Introduction">Giriş</a>
+            <a href="#Hardware">Robot Donanımı</a>
+            <a href="#Galery">Galeri</a>
+            <a href="https://github.com/MAli7319/Moborobo_GMapping/tree/robot_test" target="_blank">GitHub Repository</a>
+            <a href="README.md">README Page</a>
+        </nav>
+    </header>
+    <main>
+        <section id="readme-content" class="section">
+            <h2>README Content</h2>
+            <div id="markdown-content">Loading...</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023-2024 Robot Hırsızları</p>
+        <p>Muhammet Ali ŞENTÜRK | Şafak Galip GÜNEŞ | Velican ÖZKAYA | Ali Utku AYDIN</p>
+        <p>21993073&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 2210356163&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 2200765024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 21992809&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('README.md')
+                .then(response => response.text())
+                .then(text => {
+                    const converter = new showdown.Converter();
+                    const html = converter.makeHtml(text);
+                    document.getElementById('markdown-content').innerHTML = html;
+                });
+        });
+    </script>
+</body>
+</html>
