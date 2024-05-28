@@ -18,7 +18,7 @@ header {
 header h1 {
     font-size: 2.5rem; /* Adjust the size of the font */
     font-weight: bold; /* Make the text bold */
-    color: #ffeb3b; /* Change the text color */
+    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
     margin: 0; /* Remove default margin */
     padding: 0.2rem 0 0.5rem 0; /* Reduce top padding to 0.2rem, keep bottom padding as 0.5rem */
