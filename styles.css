@@ -85,7 +85,7 @@ main h3 {
     color: #32cd32; /* Change the color */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
     margin: 0.6rem 0; /* Adjust margins */
-    border-bottom: 2px solid #32cd32; /* Add an underline */
+    border-bottom: 2px solid #ff6347; /* Add an underline */
 }
 footer {
     background: rgba(51, 51, 51, 0.9);
