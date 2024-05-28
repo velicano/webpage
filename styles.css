@@ -66,7 +66,7 @@ main h1, main h2, main h3 {
 main h1 {
     font-size: 3rem; /* Make h1 largest */
     font-family: 'Cursive', 'Arial', sans-serif; /* Apply a cursive font */
-    color: #ff6347; /* Change the color */
+    color: #3f51b5; /* Change the color */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
     margin: 1rem 0; /* Adjust margins */
     border-bottom: 3px solid #ff6347; /* Add an underline */
