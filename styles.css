@@ -65,7 +65,6 @@ main h1 {
     color: #ff6347; /* Change the color */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
     margin: 1rem 0; /* Adjust margins */
-    text-transform: uppercase; /* Transform text to uppercase */
 }
 main h2 {
     font-size: 2.5rem; /* Make h2 larger */
@@ -73,7 +72,6 @@ main h2 {
     color: #4682b4; /* Change the color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
     margin: 0.8rem 0; /* Adjust margins */
-    text-transform: uppercase; /* Transform text to uppercase */
 }
 main h3 {
     font-size: 2rem; /* Make h3 larger */
@@ -81,7 +79,6 @@ main h3 {
     color: #32cd32; /* Change the color */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
     margin: 0.6rem 0; /* Adjust margins */
-    text-transform: uppercase; /* Transform text to uppercase */
 }
 footer {
     background: rgba(51, 51, 51, 0.9);
