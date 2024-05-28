@@ -27,14 +27,17 @@ header.fixed-header {
 header.fixed-header nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: #555555;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    padding: 0.5rem 1.5rem; /* Adjust padding for button-like appearance */
+    background-color: #3f51b5; /* Button background color */
+    border: 2px solid #3f51b5; /* Button border color */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    font-weight: bold; /* Make text bold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
 }
 header.fixed-header nav a:hover {
-    background-color: #777;
+    background-color: #5c6bc0; /* Hover state background color */
+    border-color: #5c6bc0; /* Hover state border color */
 }
 header.fixed-header nav a:visited {
     color: #fff;
