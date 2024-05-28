@@ -12,12 +12,21 @@ header {
     background: rgb(51, 51, 51);
     color: #fff;
     padding: 0.03%;
-    margin: 0;
     text-align: center;
     width: 100%;
 }
 header h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header h1 {
+    font-size: 2.5rem; /* Adjust the size of the font */
+    font-weight: bold; /* Make the text bold */
+    color: #ffeb3b; /* Change the text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    margin: 0; /* Remove default margin */
+    padding: 0.2rem 0 0.5rem 0; /* Reduce top padding to 0.2rem, keep bottom padding as 0.5rem */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 header.fixed-header {
     position: sticky;
