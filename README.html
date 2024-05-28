@@ -1,2 +1,226 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="https://tuanacetinkaya.github.io/Moborobot/img/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="https://tuanacetinkaya.github.io/Moborobot/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="https://tuanacetinkaya.github.io/Moborobot/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://tuanacetinkaya.github.io/Moborobot/img/apple-touch-icon-114x114.png"><link rel="stylesheet" href="./Moborobot_files/bootstrap.css"><link rel="stylesheet" href="./Moborobot_files/font-awesome.css"><link rel="stylesheet" href="./Moborobot_files/style.css"><link rel="stylesheet" href="./Moborobot_files/nivo-lightbox.css"><link rel="stylesheet" href="./Moborobot_files/default.css"><link href="./Moborobot_files/css" rel="stylesheet"><link href="./Moborobot_files/css(1)" rel="stylesheet"><link href="./Moborobot_files/css(2)" rel="stylesheet"><title>Moborobot</title><meta name="description" content="Hacettepe thesis project"><script defer="defer" src="./Moborobot_files/main.4bb4896b.js.indir"></script><link href="./Moborobot_files/main.073c9b0a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><nav id="menu" class="navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><a class="navbar-brand page-scroll" href="https://tuanacetinkaya.github.io/Moborobot">HU BBM479/480 Term Project</a> </div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right"><li><a href="https://tuanacetinkaya.github.io/Moborobot/installation">Orin Installation</a></li><li><a href="https://tuanacetinkaya.github.io/Moborobot/simulation">Simulation Setup</a></li><li><a href="https://tuanacetinkaya.github.io/Moborobot/#demo" class="page-scroll">DEMO</a></li><li><a href="https://tuanacetinkaya.github.io/Moborobot/#portfolio" class="page-scroll">Gallery</a></li><li><a href="https://tuanacetinkaya.github.io/Moborobot/#team" class="page-scroll">Team</a></li></ul></div></div></nav><div class="container" id="orin" style="margin-top: 200px;"><div class="section-title center-block"><h2>Setting Up Jetson Orin For Development</h2><p>In order to use nVidia Jetson Orin properly with our robot, first we need to complete its setup on the operating system side as well as on the ROS side. Nvidia has an SDK manager for managing Orin’s operating system and its other components such as CUDA, Computer Vision packages and so on. Nvidia itself describes SDK Manager as:</p><li>NVIDIA SDK Manager is a tool which provides an end-to-end development environment setup solution for NVIDIA’s DRIVE, Jetson, Holoscan, Rivermax, DOCA and Ethernet Switch SDKs for both host and target devices</li><img class="img-responsive center-block" src="./Moborobot_files/orin1.png" alt="package"><p>On Jetson Orin, we set up JetPack 5.1.1 and JetPack versions 5.x setups are only supported on Ubuntu 18.04 and 20.04 versions[1]. So, in order to set Orin up, we installed Ubuntu 20.04 on our host computers. </p><img class="img-responsive center-block" src="./Moborobot_files/orin2.png" alt="package"><p>As a last but not least thing right before starting the installation process, we need to put Orin in recovery mode. This can be done with starting Orin by pressing on the recovery button. If the Orin is already running, then the reset button along with the recovery button should be pressed till it turns off and on again. After turning on, both buttons can be released.</p><img class="img-responsive center-block" src="./Moborobot_files/orin3.png" alt="package"><p>After putting Orin into recovery mode and connecting it to the host machine via its USB cable, it should appear in the SDK manager. We set the Orin up with JetPack 5.1.1 and DeepStream package as additional SDK.</p><img class="img-responsive center-block" src="./Moborobot_files/orin4.png" alt="package"><p>As we continue to the next steps, the SDK manager will download the necessary files and start installing them into Orin by itself. It might take a while since the files that are being downloaded and transferred are large files.</p><img class="img-responsive center-block" src="./Moborobot_files/orin5.png" alt="package"><p>After flashing Jetson OS, the SDK manager will ask about the setup type that we want to continue as well as username and password for our Orin.</p><p>We pick Manual Setup for Jetson Orin 32GB - Developer Kit and put username, password into the given boxes. We used “moborobot” as our username and “root” as our password. Rest of the settings can be left with their default values.</p><p>After this step and right before additional SDKs installation, SDK manager will ask again for our username and password. In this step it won’t create a new user but it will use the credentials for installation purposes, so we used the credentials that we gave in the steps before. Before confirming the SDK installation, we went into our Orin and completed the initial setup, so it can continue without any problems.</p></div></div></div><script type="text/javascript" src="./Moborobot_files/jquery.1.11.1.js.indir"></script><script type="text/javascript" src="./Moborobot_files/bootstrap.js.indir"></script></body></html>
+<!-- saved from url=(0045)https://mali7319.github.io/Moborobo_GMapping/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Moborobo_SLAM | Moborobo_GMapping</title>
+<meta name="generator" content="Jekyll v3.9.5">
+<meta property="og:title" content="Moborobo_SLAM">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://mali7319.github.io/Moborobo_GMapping/">
+<meta property="og:url" content="https://mali7319.github.io/Moborobo_GMapping/">
+<meta property="og:site_name" content="Moborobo_GMapping">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Moborobo_SLAM">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Moborobo_SLAM","name":"Moborobo_GMapping","url":"https://mali7319.github.io/Moborobo_GMapping/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Moborobo_SLAM _ Moborobo_GMapping_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Moborobo_GMapping/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://mali7319.github.io/Moborobo_GMapping/">Moborobo_GMapping</a></h1>
+      
+
+      <h1 id="moborobo_slam">Moborobo_SLAM</h1>
+
+<h3 id="to-access-the-last-years-work">To access the last year’s work:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#to-access-the-last-years-work" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>https://github.com/kaantuncer/Moborobo-Project/</p>
+<h3 id="important-if-you-face-cmake-errors-while-building-install-the-package-that-written-in-the-log">Important! If you face cmake errors while building, install the package that written in the log<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#important-if-you-face-cmake-errors-while-building-install-the-package-that-written-in-the-log" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h2 id="also-orin-cannot-booted-with-sd-card-since-it-does-not-have-jetpack-image">Also Orin cannot booted with SD card since it does not have jetpack image<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#also-orin-cannot-booted-with-sd-card-since-it-does-not-have-jetpack-image" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h2 id="which-changes-are-made">Which changes are made?<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#which-changes-are-made" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h4 id="for-rslidar">FOR RSLIDAR:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-rslidar" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>Run these commands in your workspace:</li>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/RoboSense-LiDAR/rslidar_sdk.git
+cd rslidar_sdk
+git submodule init
+git submodule update
+
+sudo apt-get update
+sudo apt-get install -y libyaml-cpp-dev
+sudo apt-get install -y  libpcap-dev  
+</code></pre></div>    </div>
+  </li>
+  <li>For more info, you can visit: https://github.com/RoboSense-LiDAR/rslidar_sdk</li>
+</ul>
+
+<h4 id="for-moborobo-gmapping">FOR MOBOROBO GMAPPING:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-moborobo-gmapping" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li>rewriten line 17 in navigation.launch (node pkg gmapping part)</li>
+  <li>removed robosense_16.dae geometry part in RS-16.urdf.xacro file (line 20-22)</li>
+  <li>for rslidar we set the parameters for ethernet connection as:
+    <ul>
+      <li>connect the ethernet (yellow thick cable)</li>
+      <li>enter the wired settings from top-right menu</li>
+      <li>set the ipv4 method as manual</li>
+      <li>enter address as 192.168.1.102</li>
+      <li>enter netmask as 255.255.255.0</li>
+    </ul>
+  </li>
+  <li>some parameters are changed and added to the config.yaml file such as:
+    <ul>
+      <li>change-&gt; send_packet_ros: true (line 6)</li>
+      <li>change-&gt; lidar_type: RS16 (line 10)</li>
+      <li>add-&gt; frame_id: rslidar (line 13)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="for-moborobo-slam-with-slam-toolbox">FOR MOBOROBO SLAM WITH “slam-toolbox”:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-moborobo-slam-with-slam-toolbox" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<h5 id="on-robot">On robot:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#on-robot" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo apt install ros-noetic-slam-toolbox</code></li>
+  <li>Download the zip file in the link: <code class="language-plaintext highlighter-rouge">https://github.com/SteveMacenski/slam_toolbox/tree/noetic-devel</code>.</li>
+  <li>
+    <p>You need to extract the zip file inside the on_robot/src directory</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">sudo apt install ros-noetic-pointcloud-to-laserscan</code></li>
+  <li>Run this command in your workspace/src (on_robot/src): <code class="language-plaintext highlighter-rouge">git clone https://github.com/ros-perception/pointcloud_to_laserscan.git --branch indigo-devel --single-branch</code></li>
+  <li>Go to the file Moborobo-Project/on_robot/src/pointcloud_to_laserscan/src/pointcloud_to_laserscan_nodelet.cpp and change the line 241 as : <code class="language-plaintext highlighter-rouge">PLUGINLIB_EXPORT_CLASS(pointcloud_to_laserscan::PointCloudToLaserScanNodelet, nodelet::Nodelet);</code>  (inspired from https://github.com/ros-perception/depthimage_to_laserscan/issues/31)</li>
+</ul>
+
+<h5 id="simulation">Simulation:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#simulation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+<ul>
+  <li>
+    <p>commented out line 17-23 in navigation.launch (node pkg gmapping part)</p>
+
+    <ul>
+      <li>
+        <h5 id="for-execution">For execution:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-execution" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">sudo apt install ros-noetic-slam-toolbox</code></li>
+          <li><code class="language-plaintext highlighter-rouge">cp /opt/ros/noetic/share/slam_toolbox/config/mapper_params_online_async.yaml catkin_ws/src/moborobo/config/</code></li>
+          <li><code class="language-plaintext highlighter-rouge">roslaunch slam_toolbox online_async.launch params_file:=./src/moborobo/config/mapper_params_online_async.yaml use_sim_time:=true</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="for-zed2-camera">FOR ZED2 CAMERA<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-zed2-camera" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<ul>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ros-noetic-rviz-imu-plugin
+sudo apt install ros-noetic-rtabmap
+sudo apt install ros-noetic-rtabmap-ros
+sudo apt install ros-noetic-depthimage-to-laserscan
+
+cd /your_workspace(on_robot)/src
+git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git
+cd ..
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make -DCMAKE_BUILD_TYPE=Release
+source devel/setup.bash
+
+cd /your_workspace(on_robot)/src
+git clone https://github.com/stereolabs/zed-ros-interfaces.git
+cd ../
+rosdep install --from-paths src --ignore-src -r -y
+</code></pre></div>    </div>
+  </li>
+  <li>Before <code class="language-plaintext highlighter-rouge">catkin_make</code> you should remove the zed-ros-interfaces file which is <strong>inside the zed-ros-wrapper</strong> file</li>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>catkin_make -DCMAKE_BUILD_TYPE=Release
+source devel/setup.bash
+  
+cd /your_workspace(on_robot)/src
+git clone https://github.com/stereolabs/zed-ros-examples.git
+cd ..
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make -DCMAKE_BUILD_TYPE=Release
+source devel/setup.bash
+</code></pre></div>    </div>
+  </li>
+  <li>Run this command to test to see whether it works or not: <code class="language-plaintext highlighter-rouge">roslaunch zed_display_rviz display_zed2.launch</code></li>
+</ul>
+
+<h4 id="for-road-detection">FOR ROAD DETECTION<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-road-detection" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<h5 id="pytorch-installation">PyTorch Installation:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#pytorch-installation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+<ul>
+  <li>Download the file <code class="language-plaintext highlighter-rouge">torch-2.0.0+nv23.05-cp38-cp38-linux_aarch64.whl</code> from the website https://developer.download.nvidia.com/compute/redist/jp/v511/pytorch/</li>
+  <li>Run these commands directly
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export TORCH_INSTALL=~/Downloads/torch-2.0.0+nv23.05-cp38-cp38-linux_aarch64.whl
+  
+pip install --upgrade pip
+pip install numpy==’1.16.5’
+pip install --no-cache https://developer.download.nvidia.com/compute/redist/jp/v511/pytorch/torch-2.0.0+nv23.05-cp38-cp38-linux_aarch64.whl
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h5 id="mobilesam">MobileSAM<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#mobilesam" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+<ul>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd your_workspace(on_robot)/src/moborobot/scripts
+git clone https://github.com/ChaoningZhang/MobileSAM.git
+</code></pre></div>    </div>
+  </li>
+  <li>There is a file named <em>mobile_sam</em> inside the cloned repository</li>
+  <li>Cut the <em>mobile_sam</em> folder and paste it to the scripts file (one level higher)</li>
+  <li>Run the python script <code class="language-plaintext highlighter-rouge">python3 path/to/python/script/road_detector.py</code></li>
+</ul>
+
+<h4 id="for-running-gps">FOR RUNNING GPS:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#for-running-gps" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">pip install pyserial</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo apt install ros-noetic-nmea-msgs</code></li>
+  <li>
+    <p>Need to be sure that gps is connected with usb port</p>
+  </li>
+  <li>
+    <h5 id="if-permission-denied-while-running-the-py-script">if permission denied while running the py script:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#if-permission-denied-while-running-the-py-script" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">sudo su</code></li>
+      <li>//type your password</li>
+      <li><code class="language-plaintext highlighter-rouge">cd /</code></li>
+      <li><code class="language-plaintext highlighter-rouge">cd dev</code></li>
+      <li><code class="language-plaintext highlighter-rouge">chown username ttyUSB0</code></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">rosrun moborobo locoSysPublisher.py</code> for publishing the gps data</li>
+  <li><code class="language-plaintext highlighter-rouge">rosrun moborobo locoSysSubscriber.py</code> for obtaining and reading the data (or you can simply run <code class="language-plaintext highlighter-rouge">rostopic echo /moborobo/mygps</code>)</li>
+</ul>
+
+<p>Simulation: <code class="language-plaintext highlighter-rouge">sudo apt-get install ros-noetic-hector-gazebo-plugins</code></p>
+
+<h4 id="path-planning">PATH PLANNING:<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#path-planning" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<h2 id="how-to-run">How to Run?<a class="anchorjs-link " href="https://mali7319.github.io/Moborobo_GMapping/#how-to-run" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<ul>
+  <li>run this command in catkin_ws before launch: <code class="language-plaintext highlighter-rouge">source devel/setup.bash</code></li>
+  <li>for launch: <code class="language-plaintext highlighter-rouge">roslaunch moborobo gmapping_room.launch</code></li>
+</ul>
+
+
+
+      
+    </div>
+    <script src="./Moborobo_SLAM _ Moborobo_GMapping_files/anchor.min.js.indir" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+</body>
+</html>
