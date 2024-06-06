@@ -10,52 +10,52 @@
     <header class="fixed-header">
         <h1>MoboRobot</h1>
         <nav>
-            <a href="#Introduction">Giriş</a>
-            <a href="#Hardware">Robot Donanımı</a>
-            <a href="#Galery">Galeri</a>
+            <a href="#Introduction">Introduction</a>
+            <a href="#Hardware">Hardware</a>
+            <a href="#Galery">Galery</a>
             <a href="https://github.com/MAli7319/Moborobo_GMapping/tree/robot_test" target="_blank">GitHub Repository</a>
-            <a href="GuidePage.html">İndirme Rehberi</a>
-            <a href="afiş.pdf">Afiş</a>
+            <a href="GuidePage.html">Download Guide</a>
+            <a href="afiş.pdf">Poster</a>
         </nav>
     </header>
     <main>
         <div class="section project" id="Introduction">
-            <h1>Giriş</h1>
+            <h1>Introduction</h1>
             <p>
-                Modern dünyada, mobil robotların öne çıkan bir alt alan olduğu çok sayıda görev, farklı robot türleri tarafından otomatikleştirilmektedir. Bu otonom makineler hareket kabiliyetine sahip olup eğlence, ev aletleri, askeri ve tıbbi sektörler gibi çeşitli alanlarda kullanılmaktadır. Bu uygulamalar, mobil robotların karmaşık görevleri yerine getirmesini ve çeşitli ortamlarda gezinmesini gerektirir. Bu alandaki odak noktamız, mevcut mobil robotların donanımını optimize etmek ve navigasyon algoritmalarının verimliliğini artırarak ilgili uygulamalarında daha etkin ve güvenilir bir şekilde çalışabilmelerini sağlamaktır.
+                In the modern world, a large number of tasks are automated by different types of robots, of which mobile robots are a prominent subfield. These autonomous machines have mobility and are used in various fields such as entertainment, home appliances, military and medical sectors. These applications require mobile robots to perform complex tasks and navigate diverse environments. Our focus in this field is to optimize the hardware of existing mobile robots and increase the efficiency of their navigation algorithms so that they can work more effectively and reliably in their relevant applications.
             </p>
         </div>
         <div class="section project" id="Demo">
-            <h1>Tanıtım</h1>
+            <h1>Introduction/Demo video</h1>
             <div class="video-container">
                 <video width="560" height="315" controls>
                     <source src="images/MoboRoboDemo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-text">
-                    <p>Takımımızı, Projemizin odağını ve proje kapsamında yaptığımız her şeyin özetini yan taraftaki videoda izleyebilirsiniz.</p>
+                    <p>You can watch our team, the focus of our Project and a summary of everything we did within the scope of the project in the video on the side.</p>
                 </div>
             </div>
         </div>
         <div class="section project" id="Work">
-            <h1>Proje Kapsamında Mobil Robota Yaptığımız İyileştirmeler</h1>
+            <h1>Improvements We Made to the Mobile Robot Within the Scope of the Project</h1>
             <ul>
-                <li><h4>Yazılımsal İyileştirmeler</h4></li>
+                <li><h4>Software improvement</h4></li>
                 <ul>
-                    <li><a href="#Software">Çoklu Harita Navigasyonu</a></li>
+                    <li><a href="#Software">Multi-Map Navigation</a></li>
                 </ul>
-                <li><h4>Fiziksel İyileştirmeler</h4></li>
+                <li><h4>Physical Improvements</h4></li>
                 <ul>
-                    <li><a href="#Cable">Robot İçi Kablo Düzenlemeleri</a></li>
-                    <li><a href="#Arduino">Kullanıcı Arayüzü, Arduino</a></li>
-                    <li><a href="#Switch">Ekstra Güç Anahtarı</a></li>
+                    <li><a href="#Cable">Internal Robot Cable Arrangements</a></li>
+                    <li><a href="#Arduino">User Interface, Arduino</a></li>
+                    <li><a href="#Switch">New Power Switch</a></li>
                 </ul>
             </ul>
         </div>
         <div class="section project" id="Software">
-            <h2>Çoklu Harita Navigasyonu</h2>
+            <h2>Multi-Map Navigation</h2>
             <p>
-                Model geliştirme aşamasında robotların birden fazla harita arasında sorunsuz bir şekilde geçiş yapmasını sağlayan sağlam bir çözüm geliştirdik. Robot İşletim Sisteminin (ROS), LIDAR teknolojisinin, SLAM Araç Kutusunun ve Hareket Tabanının yeteneklerinden yararlanarak hassas ve etkili navigasyon sağlıyoruz. ROS, robotun çalışması için gerekli olan çeşitli yazılım araçlarını ve donanım bileşenlerini entegre ederek omurga görevi görür. LIDAR, engellerin tespiti ve güvenli navigasyonun sağlanması için hayati önem taşıyan ayrıntılı çevresel verileri toplamak için kullanılıyor. Gelişmiş teknolojilerin bu entegrasyonu, güvenilir ve uyarlanabilir bir robotik navigasyon sisteminin temelini oluşturur. SLAM (Eşzamanlı Yerelleştirme ve Haritalama) Araç Kutusu, haritalar oluşturup sürekli güncellerken aynı zamanda haritaların içindeki robotu yerelleştirerek kurulumumuzda çok önemli bir rol oynuyor. Bu ikili işlevsellik, robotun çevresini doğru bir şekilde anlamasını ve karmaşık ortamlardaki konumunu korumasını sağlar. SLAM Araç Kutusu'nun haritaları dinamik olarak güncelleme yeteneği, robotun ortamdaki değişikliklere uyum sağlayabilmesini sağlar ve böylece verimli ve doğru bir şekilde gezinme yeteneğini artırır. Move Base, yol planlama ve engellerden kaçınma işlemlerini gerçekleştirerek SLAM Araç Kutusunu tamamlar. LIDAR'dan gelen gerçek zamanlı verileri kullanan Move Base, yolları dinamik olarak uyarlayarak robotun karmaşık ve öngörülemeyen ortamlarda bile belirli noktalara otonom olarak ulaşabilmesini sağlar. Move Base, rotaları en son çevresel verilere göre sürekli olarak ayarlayarak robotun otonom olarak gezinme ve öngörülemeyen engellere yanıt verme yeteneğini geliştirir. Bu kapsamlı kurulum yalnızca hassas navigasyonu kolaylaştırmakla kalmaz, aynı zamanda robotun görevleri yüksek derecede özerklik ve güvenilirlikle yerine getirmesine de olanak tanır.
+                During the model development phase, we developed a robust solution that allows robots to seamlessly switch between multiple maps. We provide precise and effective navigation by leveraging the capabilities of the Robot Operating System (ROS), LIDAR technology, SLAM Toolbox and Motion Base. ROS acts as the backbone by integrating various software tools and hardware components required for the robot to operate. LIDAR is used to collect detailed environmental data vital to detecting obstacles and ensuring safe navigation. This integration of advanced technologies forms the basis of a reliable and adaptable robotic navigation system. The SLAM (Simultaneous Localization and Mapping) Toolbox plays a crucial role in our setup by creating and constantly updating maps while also localizing the robot within the maps. This dual functionality allows the robot to accurately understand its environment and maintain its position in complex environments. The SLAM Toolbox's ability to dynamically update maps ensures that the robot can adapt to changes in the environment, thus increasing its ability to navigate efficiently and accurately. Move Base complements the SLAM Toolbox by handling path planning and obstacle avoidance. Using real-time data from LIDAR, Move Base dynamically adapts paths, allowing the robot to reach specific points autonomously, even in complex and unpredictable environments. Move Base improves the robot's ability to navigate autonomously and respond to unpredictable obstacles by continuously adjusting routes based on the latest environmental data. This comprehensive setup not only facilitates precise navigation, but also allows the robot to perform tasks with a high degree of autonomy and reliability.
             </p>
             <div class="image-grid">
                 <img src="images/Ekran Alıntısı3.PNG" alt="Description of image">
@@ -65,9 +65,9 @@
             </div> 
         </div>
         <div class="section project" id="Cable">
-            <h2>Robot İçi Kablo Düzenlemeleri</h2>
+            <h2>Internal Robot Cable Arrangements</h2>
             <p>
-                Başlangıçta mobil robotların içindeki kablolar hareket halindeyken tekerleklere dolanıyor veya yerde sürükleniyordu. Ekip daha sonra kabloları güvenli bir şekilde yerlerinde kalacak şekilde titizlikle düzenleyerek bu sorunu çözdü ve robotun verimliliğini ve ömrünü önemli ölçüde artırdı.
+                Initially, the cables inside mobile robots would get tangled in the wheels or drag on the ground while they were in motion. The team then solved this problem by meticulously arranging the cables so that they stayed securely in place, significantly increasing the efficiency and lifespan of the robot.
             </p>
             <div class="image-grid">
                 <img src="images/iç_3.jpg" alt="Description of image">
@@ -75,9 +75,9 @@
             </div> 
         </div>
         <div class="section project" id="Arduino">
-            <h2>Kullanıcı Arayüzü</h2>
+            <h2>User Interface, Arduino</h2>
             <p>
-                Daha önce, mobil robot için kalan pil ömrünü kontrol etmenin veya Wi-Fi bağlantılarını yönetmenin bir yolu yoktu ve bu da beklenmedik güç kayıplarına ve bağlantı sorunlarına yol açıyordu. Bu sorunu çözmek için ekip, yerinde hızlı kontrol sağlayan küçük bir ekranla donatılmış bir Arduino aracı geliştirdi ve kurdu. Bu araç yalnızca kalan pili izlemekle kalmıyor, aynı zamanda mevcut Wi-Fi ağını da görüntülüyor, erişilebilen mevcut ağları gösteriyor ve kullanıcıların ağlar arasında sorunsuz bir şekilde geçiş yapmasına olanak tanıyor. Bu geliştirme, robotun güvenilirliğini ve operasyonel verimliliğini önemli ölçüde artırır.
+                Previously, there was no way to check remaining battery life or manage Wi-Fi connections for the mobile robot, leading to unexpected power losses and connectivity issues. To solve this problem, the team developed and deployed an Arduino tool equipped with a small screen that provides quick on-site control. This tool not only monitors the remaining battery but also displays the current Wi-Fi network, showing current networks that can be accessed and allowing users to switch between networks seamlessly. This development significantly increases the reliability and operational efficiency of the robot.
             </p>
             <div class="image-grid">
                 <img src="images/arduino_1.jpg" alt="image of arduino">
@@ -86,9 +86,9 @@
             </div> 
         </div>
         <div class="section project" id="Switch">
-            <h2>Güç Anahtarı Değiştirme</h2>
+            <h2>New Power Switch</h2>
             <p>
-                Bazı kablolar, mobil robota motorların ana güç kaynağından bağımsız olarak açılıp kapanmasına olanak tanıyan yeni bir güç anahtarı eklenecek şekilde değiştirildi. Bu değişiklikten önce motorların kapatılıp açılması gerektiğinde robotun tamamının kapatılması gerekiyordu. Artık bu anahtarla sadece motorların gücü kesiliyor ve süreç çok daha verimli hale geliyor. Bu iyileştirme, tekerlekleri kontrol etmek için gerekli olan motorların robotun genel işlevselliğini bozmadan yönetilebilmesi nedeniyle daha sorunsuz çalışma ve bakım sağlar.
+                Some wiring was modified to add a new power switch to the mobile robot that allows the motors to be turned on and off independently of the main power source. Before this change, when the motors had to be turned off and on, the entire robot had to be shut down. Now, with this switch, only the motors are cut off and the process becomes much more efficient. This improvement enables smoother operation and maintenance because the motors required to control the wheels can be managed without disrupting the overall functionality of the robot.
             </p>
             <div class="image-grid">
                 <img src="images/switch_2.jpg" alt="Description of image">
@@ -97,12 +97,12 @@
         </div>
         
         <div class="section project" id="Hardware">
-            <h1>Mobile Robot üzerindeki Donanımsal Ekipman</h1>
+            <h1>About Mobile Robots Hardware</h1>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Acz7egQyA?si=hV3rB2odnwE5gbrS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div class="video-text">
                     <h3>
-                        Takılı Donanımlar:
+                        Installed Hardware:
                     </h3>
                     <div class="list-style">
                         <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -111,7 +111,7 @@
                                 <li>LIDAR</li>
                                 <li>Zed 2</li>
                                 <li>Arduino UNO</li>
-                                <li>2.4" Dokunmatik Ekran</li>
+                                <li>2.4" Touch Screen</li>
                             </ul>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="section project" id="Team">
-            <h1>Takım Tanıtımı</h1>
+            <h1>Team Members Introduction</h1>
             <div class="video-container">
                 <video width="560" height="315" controls>
                     <source src="images/Takım.mp4" type="video/mp4">
@@ -128,7 +128,7 @@
             </div>
         </div>
         <div class="section project" id="Galery">
-            <h1>Galeri</h1>
+            <h1>Galery</h1>
             <div class="image-grid">
                 <img src="images/iç_1.jpg" alt="Description of image">
                 <img src="images/iç_2.jpg" alt="Description of image">
